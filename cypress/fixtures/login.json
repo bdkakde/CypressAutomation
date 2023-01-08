@@ -1,0 +1,12 @@
+[
+    {
+        "userType": "admin",
+        "username": "admin@test.com",
+        "password": "test1234"
+    },
+    {
+        "userType": "employee",
+        "username": "employee@test.com",
+        "password": "test1234"
+    }
+]

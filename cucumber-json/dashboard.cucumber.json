@@ -1,0 +1,53 @@
+[
+  {
+    "description": "    User want to verify dashboard features",
+    "keyword": "Feature",
+    "name": "Dashboard",
+    "line": 1,
+    "id": "dashboard",
+    "tags": [],
+    "uri": "dashboard.feature",
+    "elements": [
+      {
+        "id": "dashboard;verify-dashboard-feature",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify dashboard feature",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user open login page",
+            "result": {
+              "status": "passed",
+              "duration": 2001000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user login to application",
+            "result": {
+              "status": "passed",
+              "duration": 7342000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user verify dashboard page",
+            "result": {
+              "status": "passed",
+              "duration": 45000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

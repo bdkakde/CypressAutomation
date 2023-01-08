@@ -1,0 +1,93 @@
+[
+  {
+    "description": "    User want to login into application",
+    "keyword": "Feature",
+    "name": "Login",
+    "line": 1,
+    "id": "login",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "login;invalid-login-if-password-is-empty",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Invalid Login if password is empty",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user open login page",
+            "result": {
+              "status": "passed",
+              "duration": 1824000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user enter valid username and empty password and click on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 1308000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user verify error messege",
+            "result": {
+              "status": "passed",
+              "duration": 40000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;invalid-login-if-username-is-empty",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Invalid Login if username is empty",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "user open login page",
+            "result": {
+              "status": "passed",
+              "duration": 1345000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "user enter empty username and valid password and click on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 716000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "user verify error messege",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 7000ms: Expected to find element: `div[class='message-error validation-summary-errors']`, but never found it.\n    at LoginPage.verifyPasswordEmptyErrorMessage (cypress/e2e/BDD/pageobjects/LoginPage.js:46:57)\n    at Context.eval (cypress/e2e/BDD/stepsdef/loginPageSteps.cy.js:27:14)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

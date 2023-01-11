@@ -15,7 +15,7 @@
         "@wdio/mocha-framework": "^7.23.0",
         "@wdio/spec-reporter": "^7.0.0",
         "chromedriver": "^104.0.0",
-        "cypress": "^12.2.0",
+        "cypress": "^12.3.0",
         "cypress-cucumber-preprocessor": "^4.3.1",
         "cypress-file-upload": "^5.0.8",
         "cypress-iframe": "^1.0.1",

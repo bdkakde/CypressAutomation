@@ -28,4 +28,10 @@ describe('Select Options Test suite', () => {
 
   })
 
+  it('TC3', () => {
+    cy.visit('https://register.rediff.com/register/register.php?FormName=user_details')
+
+    
+  })
+
 })

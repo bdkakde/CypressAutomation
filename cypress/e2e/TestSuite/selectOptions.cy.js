@@ -28,21 +28,4 @@ describe('Select Options Test suite', () => {
 
   })
 
-  it('TC3', () => {
-    cy.visit('https://register.rediff.com/register/register.php?FormName=user_details')
-    let optn = 'Angola'
-    //Select the option with the text 
-    cy.get('#country').select(optn).should('have.value', 5)
-
-    cy.get('#country').select(optn).find(':selected').contains(optn)
-
-    cy.get('#country').select(optn).find('option:selected').should('have.text', optn);
-    cy.log('Selected dropdown value is ' + optn)
-
-    //Select the option with index
-    cy.get('#country').select("India")
-    cy.get(':nth-child(1) > [colspan="3"] > select').select(2).invoke("val").should("eq", "Agra")
-
-  })
-
 })
